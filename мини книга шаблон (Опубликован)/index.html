@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Created with iSpring --><!-- 964 604 --><!--version 10.1.3.9005 --><!--type html --><!--mainFolder ./ --><!--content book -->
+<!--
+Copyright 2012 Mozilla Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Adobe CMap resources are covered by their own copyright but the same license:
+
+    Copyright 1990-2015 Adobe Systems Incorporated.
+
+See https://github.com/adobe-type-tools/cmap-resources
+-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<title>мини книга шаблон</title>
+	<link rel="stylesheet" href="data/css/viewer.css"/>
+	<script src="data/js/viewer.js"></script>
+	
+	
+	<script>
+		if (document.addEventListener) // IE9+
+		{
+			var book = "eNp1Vd1O40YUfhXL0t4lEfmjgbuxPYCFsSPbgaJqZRnWSyOlBNmuql1AIlCVrqAgVZUqVd1d7U2vzU+WAJvsK8y8wj5Jz5lxSHYFNx7PnJnvOz/fnNlV03baidR5lX1iAzZkA4Xd4cCuWKbw31nGLtg9G7GhWlB3wq3Ia7+OEnX+h101gT/4qZXnSvVKo1Cfq5cq380+L6hxuL2FlnKhWn++DwtJ2EmBoV4tN7QZrVJdqNZrhq4RfaZq1LQGmTWIPlslwPBjmFjdzbCzGsVJu7utzqfxz5FYboZJ8ks3fqHOvww7Cay1yw2w76rUCIi3HDSJ5605rhEYJrGcxcC0V4llGpN1i2jUwjjfsj67ZH1+wIb8hN0q7DPLYDJi9/y0pLD38PdZzC/4Ebvlh6yvwO43MMBqxm5K4OcTpA8cfyIDu2YDeXyKQYHVe36usBGY7vgBP4FxAAv8D/gZoT/j/A/mn2ZqWkSnS45lUBf53k8I5Bmd2Lp05R3AfgJnhiyTJsshcEoMpj3l898Q3BU4dMRuwIXsy8F/cr+zDFb4FNSmFhBdp55naqZl+uuB7lLiw5Y1019CiA/gwg0EmAHbSOE9jHwE7CP+hp/yM4y9j9OiLADvQZwDpe3txO3trUcJWq5LbR/CX6QPeeU9TJmCHBgZP1Awy5DMI6wSZBA3iFpBHvlv/OQx5EXHdwKbfu/L9KEc+qLaAhik3wPZQwkB9Ay8h++3sEdPwjZduvoErJAWwp4I6AmwKODXwIYRaI6zvELc5WCJkrzUf6EywYlL4R8qBQR2Awt3sJBBhkfs7hEAfxwq0AwUfixSNhT5h5MjCHco1QrOnEoNwj2AcaB8OfhXiGNMIMTxtiBB8JqcjOvcF1o+BIBJRR5NXSn3cNGZ6G+IlwsJpG3suRf4RBvrc+LCQO4yyLo3gbhmwxx5yWm5EwM/zpdXTLvl06kToumNjY7tL0mTh4fOwaXL0h7/FRtGaQ/2Qo1gzLCIcs5u9yCgM4CQ470wX7IrONbDBMMc6sEPYYSE8nMY8Q7c5ZS2Ezgt3zJtmncmfgidAe7+/XSF+bncnW8dJ+Tdt/tYX+7D2zIJ8cN06kGCz4TZbq1o1H0mD7hUh1tmraNkqIGxH8pmgtLI6yx3tmyySkzAtmigEduGRjKtLNQRXndgnOpjCriIjQEs7CO6qnyN31PWoo0iJgwgZGvOSk/zmb4l0vXPwzslWvaReKkGCAkgmbxuF0B3I+V5jZkH6I9C1OJRAyULL4Yi5yN5O6diEC0TvFinnk9d0Nokq5f8WDqq7sPDGHfTaDNdiLs/6d2dV9jM8pfrJfxHMfY3fAFrVJupaFVSnJ3VFoqVmYVGcU4rl4s1Y86oUaNSn6k1gLGdiIbY7ISvzO002orDVDyG+csXR0najSMvDdNozBNthxudiGxuRknS3mh32umrle6LKD+z/z873N2s";
+
+			document.addEventListener("DOMContentLoaded", function() {
+				PdfViewer.checkMobileIntegration(book);
+
+				var viewerInitCallback = function(viewer) {
+					
+				};
+
+				var startupApplication = function(initViewerState) {
+					var fileOpenParams = {"type":"fileName","filePath":"data\/book.pdf"};
+					PdfViewer.open(fileOpenParams, document.body, book, viewerInitCallback, initViewerState);
+				};
+
+				(function(startupFunc) {
+					if (startupFunc)
+					{
+						startupFunc(startupApplication);
+					}
+					else
+					{
+						startupApplication();
+					}
+				})();
+			});
+		}
+		else
+		{
+			location.replace("data/html5-unsupported.html");
+		}
+	</script>
+</head>
+<body></body>
+</html>
